@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		152F68221ADBEF6000090835 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 152F680C1ADBED5100090835 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		152F68241ADBEF7000090835 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152F681D1ADBEEAA00090835 /* CryptoSwift.framework */; };
+		152F68251ADBF07300090835 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 152F681D1ADBEEAA00090835 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15315B831ABEAF52004A7FA2 /* transactionSentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15315B811ABEAF52004A7FA2 /* transactionSentCell.swift */; };
+		15315B841ABEAF52004A7FA2 /* transactionSentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15315B821ABEAF52004A7FA2 /* transactionSentCell.xib */; };
+		15315B8A1ABECB62004A7FA2 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15315B891ABECB62004A7FA2 /* Transaction.swift */; };
+		15315B8D1ABEEBAF004A7FA2 /* RecievedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15315B8B1ABEEBAF004A7FA2 /* RecievedCell.swift */; };
+		15315B8E1ABEEBAF004A7FA2 /* RecievedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15315B8C1ABEEBAF004A7FA2 /* RecievedCell.xib */; };
+		155F8D371AB45C1400B41F3A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F8D361AB45C1400B41F3A /* MainViewController.swift */; };
+		1562D32A1AB3704A008E3D28 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562D3291AB3704A008E3D28 /* RegisterController.swift */; };
+		15754DE71AB3473D006B5D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15754DE61AB3473D006B5D81 /* AppDelegate.swift */; };
+		15754DE91AB3473D006B5D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15754DE81AB3473D006B5D81 /* ViewController.swift */; };
+		15754DEC1AB3473D006B5D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15754DEA1AB3473D006B5D81 /* Main.storyboard */; };
+		15754DEE1AB3473D006B5D81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15754DED1AB3473D006B5D81 /* Images.xcassets */; };
+		15754DF11AB3473D006B5D81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15754DEF1AB3473D006B5D81 /* LaunchScreen.xib */; };
+		158F40481AB3516300E3BC70 /* Overpass_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 158F40471AB3516300E3BC70 /* Overpass_Regular.ttf */; };
+		15DDBE3E1AB5E9C500A27E99 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DDBE3D1AB5E9C500A27E99 /* extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		152F680B1ADBED5100090835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152F68041ADBED5100090835 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		152F680D1ADBED5100090835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152F68041ADBED5100090835 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		152F680F1ADBED5100090835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152F68041ADBED5100090835 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		152F68111ADBED5100090835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152F68041ADBED5100090835 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		152F68131ADBED7A00090835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152F68041ADBED5100090835 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		152F681C1ADBEEAA00090835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152F68171ADBEEA900090835 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		152F681E1ADBEEAA00090835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152F68171ADBEEA900090835 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = CryptoSwiftTests;
+		};
+		152F68201ADBEEBE00090835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152F68171ADBEEA900090835 /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		158F403F1AB34E1300E3BC70 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				152F68251ADBF07300090835 /* CryptoSwift.framework in Copy Frameworks */,
+				152F68221ADBEF6000090835 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		152F68041ADBED5100090835 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		152F68171ADBEEA900090835 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "CryptoSwift-master/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
+		15315B811ABEAF52004A7FA2 /* transactionSentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = transactionSentCell.swift; sourceTree = "<group>"; };
+		15315B821ABEAF52004A7FA2 /* transactionSentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = transactionSentCell.xib; sourceTree = "<group>"; };
+		15315B891ABECB62004A7FA2 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		15315B8B1ABEEBAF004A7FA2 /* RecievedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecievedCell.swift; sourceTree = "<group>"; };
+		15315B8C1ABEEBAF004A7FA2 /* RecievedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecievedCell.xib; sourceTree = "<group>"; };
+		155F8D361AB45C1400B41F3A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1562D3291AB3704A008E3D28 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		15754DE11AB3473D006B5D81 /* OmnicoinWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmnicoinWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15754DE51AB3473D006B5D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15754DE61AB3473D006B5D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15754DE81AB3473D006B5D81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15754DEB1AB3473D006B5D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15754DED1AB3473D006B5D81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		15754DF01AB3473D006B5D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		158F40471AB3516300E3BC70 /* Overpass_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Overpass_Regular.ttf; sourceTree = "<group>"; };
+		15DDBE3D1AB5E9C500A27E99 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		91E5102D6DA626C0AF643498 /* libPods-OmnicoinWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OmnicoinWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15754DDE1AB3473D006B5D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152F68241ADBEF7000090835 /* CryptoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		152F68051ADBED5100090835 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				152F680C1ADBED5100090835 /* Alamofire.framework */,
+				152F680E1ADBED5100090835 /* Alamofire.framework */,
+				152F68101ADBED5100090835 /* Alamofire iOS Tests.xctest */,
+				152F68121ADBED5100090835 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		152F68181ADBEEA900090835 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				152F681D1ADBEEAA00090835 /* CryptoSwift.framework */,
+				152F681F1ADBEEAA00090835 /* CryptoSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15754DD81AB3473D006B5D81 = {
+			isa = PBXGroup;
+			children = (
+				152F68171ADBEEA900090835 /* CryptoSwift.xcodeproj */,
+				152F68041ADBED5100090835 /* Alamofire.xcodeproj */,
+				15754DE31AB3473D006B5D81 /* OmnicoinWallet */,
+				15754DE21AB3473D006B5D81 /* Products */,
+				EAD8627DA19D39590D19AE07 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15754DE21AB3473D006B5D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15754DE11AB3473D006B5D81 /* OmnicoinWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15754DE31AB3473D006B5D81 /* OmnicoinWallet */ = {
+			isa = PBXGroup;
+			children = (
+				15754DE61AB3473D006B5D81 /* AppDelegate.swift */,
+				15754DE81AB3473D006B5D81 /* ViewController.swift */,
+				155F8D361AB45C1400B41F3A /* MainViewController.swift */,
+				1562D3291AB3704A008E3D28 /* RegisterController.swift */,
+				15754DEA1AB3473D006B5D81 /* Main.storyboard */,
+				15754DED1AB3473D006B5D81 /* Images.xcassets */,
+				15754DEF1AB3473D006B5D81 /* LaunchScreen.xib */,
+				15754DE41AB3473D006B5D81 /* Supporting Files */,
+				15DDBE3D1AB5E9C500A27E99 /* extensions.swift */,
+				15315B811ABEAF52004A7FA2 /* transactionSentCell.swift */,
+				15315B821ABEAF52004A7FA2 /* transactionSentCell.xib */,
+				15315B891ABECB62004A7FA2 /* Transaction.swift */,
+				15315B8B1ABEEBAF004A7FA2 /* RecievedCell.swift */,
+				15315B8C1ABEEBAF004A7FA2 /* RecievedCell.xib */,
+			);
+			path = OmnicoinWallet;
+			sourceTree = "<group>";
+		};
+		15754DE41AB3473D006B5D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				158F40471AB3516300E3BC70 /* Overpass_Regular.ttf */,
+				15754DE51AB3473D006B5D81 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD8627DA19D39590D19AE07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91E5102D6DA626C0AF643498 /* libPods-OmnicoinWallet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15754DE01AB3473D006B5D81 /* OmnicoinWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15754E001AB3473D006B5D81 /* Build configuration list for PBXNativeTarget "OmnicoinWallet" */;
+			buildPhases = (
+				15754DDD1AB3473D006B5D81 /* Sources */,
+				15754DDE1AB3473D006B5D81 /* Frameworks */,
+				15754DDF1AB3473D006B5D81 /* Resources */,
+				158F403F1AB34E1300E3BC70 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				152F68211ADBEEBE00090835 /* PBXTargetDependency */,
+				152F68141ADBED7A00090835 /* PBXTargetDependency */,
+			);
+			name = OmnicoinWallet;
+			productName = OmnicoinWallet;
+			productReference = 15754DE11AB3473D006B5D81 /* OmnicoinWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15754DD91AB3473D006B5D81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Alex Catchpole";
+				TargetAttributes = {
+					15754DE01AB3473D006B5D81 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 63PBRZ4YLT;
+					};
+				};
+			};
+			buildConfigurationList = 15754DDC1AB3473D006B5D81 /* Build configuration list for PBXProject "OmnicoinWallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15754DD81AB3473D006B5D81;
+			productRefGroup = 15754DE21AB3473D006B5D81 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 152F68051ADBED5100090835 /* Products */;
+					ProjectRef = 152F68041ADBED5100090835 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 152F68181ADBEEA900090835 /* Products */;
+					ProjectRef = 152F68171ADBEEA900090835 /* CryptoSwift.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				15754DE01AB3473D006B5D81 /* OmnicoinWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		152F680C1ADBED5100090835 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 152F680B1ADBED5100090835 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		152F680E1ADBED5100090835 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 152F680D1ADBED5100090835 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		152F68101ADBED5100090835 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 152F680F1ADBED5100090835 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		152F68121ADBED5100090835 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 152F68111ADBED5100090835 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		152F681D1ADBEEAA00090835 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 152F681C1ADBEEAA00090835 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		152F681F1ADBEEAA00090835 /* CryptoSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CryptoSwiftTests.xctest;
+			remoteRef = 152F681E1ADBEEAA00090835 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15754DDF1AB3473D006B5D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158F40481AB3516300E3BC70 /* Overpass_Regular.ttf in Resources */,
+				15754DEC1AB3473D006B5D81 /* Main.storyboard in Resources */,
+				15315B841ABEAF52004A7FA2 /* transactionSentCell.xib in Resources */,
+				15754DF11AB3473D006B5D81 /* LaunchScreen.xib in Resources */,
+				15315B8E1ABEEBAF004A7FA2 /* RecievedCell.xib in Resources */,
+				15754DEE1AB3473D006B5D81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15754DDD1AB3473D006B5D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15315B831ABEAF52004A7FA2 /* transactionSentCell.swift in Sources */,
+				15DDBE3E1AB5E9C500A27E99 /* extensions.swift in Sources */,
+				15315B8A1ABECB62004A7FA2 /* Transaction.swift in Sources */,
+				15754DE91AB3473D006B5D81 /* ViewController.swift in Sources */,
+				15754DE71AB3473D006B5D81 /* AppDelegate.swift in Sources */,
+				1562D32A1AB3704A008E3D28 /* RegisterController.swift in Sources */,
+				15315B8D1ABEEBAF004A7FA2 /* RecievedCell.swift in Sources */,
+				155F8D371AB45C1400B41F3A /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		152F68141ADBED7A00090835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 152F68131ADBED7A00090835 /* PBXContainerItemProxy */;
+		};
+		152F68211ADBEEBE00090835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			targetProxy = 152F68201ADBEEBE00090835 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15754DEA1AB3473D006B5D81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15754DEB1AB3473D006B5D81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15754DEF1AB3473D006B5D81 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15754DF01AB3473D006B5D81 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15754DFE1AB3473D006B5D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15754DFF1AB3473D006B5D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15754E011AB3473D006B5D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = OmnicoinWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+			};
+			name = Debug;
+		};
+		15754E021AB3473D006B5D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = OmnicoinWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15754DDC1AB3473D006B5D81 /* Build configuration list for PBXProject "OmnicoinWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15754DFE1AB3473D006B5D81 /* Debug */,
+				15754DFF1AB3473D006B5D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15754E001AB3473D006B5D81 /* Build configuration list for PBXNativeTarget "OmnicoinWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15754E011AB3473D006B5D81 /* Debug */,
+				15754E021AB3473D006B5D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15754DD91AB3473D006B5D81 /* Project object */;
+}
