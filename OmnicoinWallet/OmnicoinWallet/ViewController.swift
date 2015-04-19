@@ -12,7 +12,6 @@ import Alamofire
 
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var mainView: UIView!
-    @IBOutlet var secondView: UIView!
     
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var passwordField: UITextField!
@@ -32,7 +31,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         println("loaded")
         //setup boxes
         mainView.layer.cornerRadius = 5
-        secondView.layer.cornerRadius = 5
         
         //setup textboxes
         usernameField.layer.cornerRadius = 5
