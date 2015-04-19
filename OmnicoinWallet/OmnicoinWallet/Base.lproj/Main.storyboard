@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="9zs-ZF-hOq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9zs-ZF-hOq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Overpass_Regular.ttf">
@@ -35,52 +36,75 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="675"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kl7-6H-EQl">
-                                <rect key="frame" x="100" y="38" width="120" height="120"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ku3-pC-DMA">
-                                <rect key="frame" x="19" y="456" width="282" height="92"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ku3-pC-DMA">
+                                <rect key="frame" x="16" y="517" width="568" height="116"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DON'T HAVE AN ACCOUNT?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpZ-0e-sLH">
-                                        <rect key="frame" x="8" y="6" width="266" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T HAVE AN ACCOUNT?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpZ-0e-sLH">
+                                        <rect key="frame" x="8" y="8" width="552" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="YQY-vW-cLF"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yk-u6-WBp">
-                                        <rect key="frame" x="26" y="33" width="230" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yk-u6-WBp">
+                                        <rect key="frame" x="29" y="39" width="510" height="50"/>
                                         <color key="backgroundColor" red="0.22352941179999999" green="0.17254901959999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="irv-IG-kqD"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="18"/>
                                         <state key="normal" title="REGISTER">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="uXA-86-8DJ" kind="push" id="hlg-AF-BYb"/>
+                                            <segue destination="uXA-86-8DJ" kind="show" id="hlg-AF-BYb"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.37647058820000001" green="0.2901960784" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5Yk-u6-WBp" firstAttribute="leading" secondItem="Ku3-pC-DMA" secondAttribute="leading" constant="29" id="3JG-Og-qog"/>
+                                    <constraint firstAttribute="height" constant="116" id="9cj-fn-1XV"/>
+                                    <constraint firstItem="rpZ-0e-sLH" firstAttribute="leading" secondItem="Ku3-pC-DMA" secondAttribute="leading" constant="8" id="QQG-Ga-6jU"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Yk-u6-WBp" secondAttribute="trailing" constant="29" id="QRt-Ry-RT7"/>
+                                    <constraint firstAttribute="centerX" secondItem="5Yk-u6-WBp" secondAttribute="centerX" id="ZcB-MR-5Sf"/>
+                                    <constraint firstAttribute="trailing" secondItem="rpZ-0e-sLH" secondAttribute="trailing" constant="8" id="daE-xE-YEY"/>
+                                    <constraint firstAttribute="centerX" secondItem="rpZ-0e-sLH" secondAttribute="centerX" id="fgu-en-znW"/>
+                                    <constraint firstItem="5Yk-u6-WBp" firstAttribute="top" secondItem="rpZ-0e-sLH" secondAttribute="bottom" constant="8" id="hiU-5n-wOG"/>
+                                    <constraint firstItem="rpZ-0e-sLH" firstAttribute="top" secondItem="Ku3-pC-DMA" secondAttribute="top" constant="8" id="kCt-Tw-CC6"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clV-84-XOK">
-                                <rect key="frame" x="19" y="174" width="282" height="274"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clV-84-XOK">
+                                <rect key="frame" x="16" y="235" width="568" height="274"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIGN IN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usz-SS-Qgb">
-                                        <rect key="frame" x="8" y="8" width="266" height="24.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usz-SS-Qgb">
+                                        <rect key="frame" x="11" y="8" width="549" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="2kB-sd-D5O"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="19"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dkp-Lz-Eq0">
-                                        <rect key="frame" x="0.0" y="40" width="282" height="1"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkp-Lz-Eq0">
+                                        <rect key="frame" x="3" y="40" width="562" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="I02-rS-Gl4"/>
+                                        </constraints>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIe-jj-BeG">
-                                        <rect key="frame" x="8" y="143" width="266" height="37"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIe-jj-BeG">
+                                        <rect key="frame" x="11" y="143" width="549" height="37"/>
                                         <color key="backgroundColor" red="0.22352941179999999" green="0.17254901959999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="69k-LT-dlR"/>
+                                        </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
@@ -88,21 +112,30 @@
                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="KjX-U7-FBH"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USERNAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQE-E3-Pps">
-                                        <rect key="frame" x="9" y="49" width="266" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQE-E3-Pps">
+                                        <rect key="frame" x="12" y="49" width="548" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="I3e-o2-d1a"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6d-Xe-m0e">
-                                        <rect key="frame" x="9" y="118" width="266" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6d-Xe-m0e">
+                                        <rect key="frame" x="12" y="118" width="548" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="TER-rl-jcq"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJr-qm-x9C">
-                                        <rect key="frame" x="26" y="197" width="230" height="54"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJr-qm-x9C">
+                                        <rect key="frame" x="29" y="197" width="510" height="54"/>
                                         <color key="backgroundColor" red="0.22352941176470589" green="0.17254901960784313" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="YNR-Mb-nG4"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="18"/>
                                         <state key="normal" title="SIGN IN">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -112,12 +145,19 @@
                                             <action selector="signInButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i2Q-6X-HVU"/>
                                         </connections>
                                     </button>
-                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="XbL-2A-VID">
-                                        <rect key="frame" x="84" y="10" width="20" height="20"/>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="XbL-2A-VID">
+                                        <rect key="frame" x="87" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="DHe-Oi-q1y"/>
+                                            <constraint firstAttribute="height" constant="20" id="FUH-bA-UJp"/>
+                                        </constraints>
                                     </activityIndicatorView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ed2-TW-4kC">
-                                        <rect key="frame" x="8" y="73" width="266" height="37"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ed2-TW-4kC">
+                                        <rect key="frame" x="11" y="73" width="549" height="37"/>
                                         <color key="backgroundColor" red="0.22352941176470589" green="0.17254901960784313" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="L7P-YB-7es"/>
+                                        </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
@@ -127,11 +167,66 @@
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.37647058823529411" green="0.29019607843137257" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Usz-SS-Qgb" firstAttribute="leading" secondItem="XbL-2A-VID" secondAttribute="trailing" constant="-96" id="1o7-c1-Sq1"/>
+                                    <constraint firstAttribute="trailing" secondItem="CJr-qm-x9C" secondAttribute="trailing" constant="29" id="4pb-Mw-X6g"/>
+                                    <constraint firstAttribute="trailing" secondItem="k6d-Xe-m0e" secondAttribute="trailing" constant="8" id="5Rw-hs-Nvc"/>
+                                    <constraint firstItem="Usz-SS-Qgb" firstAttribute="leading" secondItem="clV-84-XOK" secondAttribute="leading" constant="11" id="7Mm-oV-Z8t"/>
+                                    <constraint firstAttribute="bottom" secondItem="CJr-qm-x9C" secondAttribute="bottom" constant="23" id="KGX-X2-Lvp"/>
+                                    <constraint firstAttribute="height" constant="274" id="Kmu-63-iri"/>
+                                    <constraint firstItem="ed2-TW-4kC" firstAttribute="top" secondItem="OQE-E3-Pps" secondAttribute="bottom" constant="1" id="NZl-sd-P41"/>
+                                    <constraint firstItem="k6d-Xe-m0e" firstAttribute="leading" secondItem="clV-84-XOK" secondAttribute="leading" constant="12" id="Q49-zr-lTC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Usz-SS-Qgb" secondAttribute="trailing" constant="8" id="USH-L0-gCg"/>
+                                    <constraint firstAttribute="centerX" secondItem="CJr-qm-x9C" secondAttribute="centerX" id="UYI-Bg-3yu"/>
+                                    <constraint firstItem="Dkp-Lz-Eq0" firstAttribute="top" secondItem="Usz-SS-Qgb" secondAttribute="bottom" constant="7" id="Xfq-bG-kHl"/>
+                                    <constraint firstItem="ed2-TW-4kC" firstAttribute="leading" secondItem="clV-84-XOK" secondAttribute="leading" constant="11" id="Z0e-TB-vQv"/>
+                                    <constraint firstItem="sIe-jj-BeG" firstAttribute="top" secondItem="k6d-Xe-m0e" secondAttribute="bottom" constant="2" id="ZAq-kj-Elh"/>
+                                    <constraint firstItem="CJr-qm-x9C" firstAttribute="top" secondItem="sIe-jj-BeG" secondAttribute="bottom" constant="17" id="bsm-mw-0EC"/>
+                                    <constraint firstItem="OQE-E3-Pps" firstAttribute="top" secondItem="Dkp-Lz-Eq0" secondAttribute="bottom" constant="8" id="bxT-Rw-0vB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dkp-Lz-Eq0" secondAttribute="trailing" constant="3" id="c75-y3-eKa"/>
+                                    <constraint firstItem="OQE-E3-Pps" firstAttribute="leading" secondItem="clV-84-XOK" secondAttribute="leading" constant="12" id="e0Y-J4-WbH"/>
+                                    <constraint firstAttribute="trailing" secondItem="OQE-E3-Pps" secondAttribute="trailing" constant="8" id="g8F-bD-Mfd"/>
+                                    <constraint firstItem="XbL-2A-VID" firstAttribute="top" secondItem="clV-84-XOK" secondAttribute="top" constant="10" id="hze-tI-ZCT"/>
+                                    <constraint firstItem="Dkp-Lz-Eq0" firstAttribute="leading" secondItem="clV-84-XOK" secondAttribute="leading" constant="3" id="ltC-MR-GIG"/>
+                                    <constraint firstAttribute="centerX" secondItem="Dkp-Lz-Eq0" secondAttribute="centerX" id="lzM-A7-8fD"/>
+                                    <constraint firstItem="k6d-Xe-m0e" firstAttribute="top" secondItem="ed2-TW-4kC" secondAttribute="bottom" constant="8" id="ndA-yS-asy"/>
+                                    <constraint firstItem="Usz-SS-Qgb" firstAttribute="top" secondItem="clV-84-XOK" secondAttribute="top" constant="8" id="oxP-I5-mMp"/>
+                                    <constraint firstItem="sIe-jj-BeG" firstAttribute="leading" secondItem="clV-84-XOK" secondAttribute="leading" constant="11" id="r51-eW-Wkm"/>
+                                    <constraint firstAttribute="trailing" secondItem="sIe-jj-BeG" secondAttribute="trailing" constant="8" id="tIX-rW-pwB"/>
+                                    <constraint firstAttribute="trailing" secondItem="ed2-TW-4kC" secondAttribute="trailing" constant="8" id="yKM-xI-Oek"/>
+                                    <constraint firstItem="CJr-qm-x9C" firstAttribute="leading" secondItem="clV-84-XOK" secondAttribute="leading" constant="29" id="zmb-Hy-nFD"/>
+                                </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kl7-6H-EQl">
+                                <rect key="frame" x="240" y="99" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="vWq-L5-kGk"/>
+                                    <constraint firstAttribute="width" constant="120" id="yQY-ix-HFo"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="clV-84-XOK" firstAttribute="top" secondItem="kl7-6H-EQl" secondAttribute="bottom" constant="16" id="5Iu-0Z-wfT"/>
+                            <constraint firstItem="clV-84-XOK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Aee-cF-sCK"/>
+                            <constraint firstItem="Ku3-pC-DMA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="N5b-2D-3NZ"/>
+                            <constraint firstAttribute="centerX" secondItem="kl7-6H-EQl" secondAttribute="centerX" id="NQh-tc-p6C"/>
+                            <constraint firstItem="Ku3-pC-DMA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="QfD-YV-xdf"/>
+                            <constraint firstItem="Ku3-pC-DMA" firstAttribute="top" secondItem="clV-84-XOK" secondAttribute="bottom" constant="8" id="Ta6-Gu-95d"/>
+                            <constraint firstAttribute="centerX" secondItem="clV-84-XOK" secondAttribute="centerX" id="YOq-c8-1mh"/>
+                            <constraint firstItem="kl7-6H-EQl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-26" id="eQV-go-tKM"/>
+                            <constraint firstItem="clV-84-XOK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="gYS-KP-iGg"/>
+                            <constraint firstItem="kl7-6H-EQl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="gmf-CV-3DR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eQV-go-tKM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="XVD-Zs-nz4"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="675"/>
                     <connections>
                         <outlet property="activity" destination="XbL-2A-VID" id="1SN-yp-6N0"/>
                         <outlet property="mainView" destination="clV-84-XOK" id="LNC-rL-AxV"/>
@@ -140,12 +235,12 @@
                         <outlet property="secondView" destination="Ku3-pC-DMA" id="c0v-TT-yWz"/>
                         <outlet property="signInButton" destination="CJr-qm-x9C" id="7Go-6i-wno"/>
                         <outlet property="usernameField" destination="ed2-TW-4kC" id="KAc-d5-E9p"/>
-                        <segue destination="biL-3m-C0y" kind="modal" identifier="login" id="m7a-AJ-3N6"/>
+                        <segue destination="biL-3m-C0y" kind="presentation" identifier="login" id="m7a-AJ-3N6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="377"/>
+            <point key="canvasLocation" x="1301" y="397.5"/>
         </scene>
         <!--REGISTER-->
         <scene sceneID="fdh-fi-vh4">
@@ -156,25 +251,34 @@
                         <viewControllerLayoutGuide type="bottom" id="9bL-0f-oZg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lW9-ld-7VX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="675"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJI-Lf-Oo0">
-                                <rect key="frame" x="16" y="89" width="288" height="359"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJI-Lf-Oo0">
+                                <rect key="frame" x="16" y="89" width="568" height="359"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D0f-4o-tuD">
-                                        <rect key="frame" x="0.0" y="35" width="282" height="1"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0f-4o-tuD">
+                                        <rect key="frame" x="3" y="40" width="562" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="gx8-3N-JdO"/>
+                                        </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REGISTER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x16-5e-aeF">
-                                        <rect key="frame" x="8" y="8" width="272" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x16-5e-aeF">
+                                        <rect key="frame" x="11" y="8" width="549" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="rQq-Ka-f9g"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="19"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="3 - 30 characters" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTU-n2-Dof">
-                                        <rect key="frame" x="11" y="83" width="266" height="37"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="3 - 30 characters" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTU-n2-Dof">
+                                        <rect key="frame" x="11" y="73" width="549" height="37"/>
                                         <color key="backgroundColor" red="0.22352941179999999" green="0.17254901959999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="xc0-u4-6TZ"/>
+                                        </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
@@ -182,15 +286,21 @@
                                             <outlet property="delegate" destination="uXA-86-8DJ" id="Dwa-RC-BPZ"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USERNAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc6-CD-Yxg">
-                                        <rect key="frame" x="11" y="58" width="266" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc6-CD-Yxg">
+                                        <rect key="frame" x="12" y="49" width="548" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="Adx-Wn-TqU"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEj-Jb-fmI">
-                                        <rect key="frame" x="11" y="153" width="266" height="37"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEj-Jb-fmI">
+                                        <rect key="frame" x="11" y="143" width="549" height="37"/>
                                         <color key="backgroundColor" red="0.22352941179999999" green="0.17254901959999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="YZB-di-YxL"/>
+                                        </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
@@ -198,15 +308,21 @@
                                             <outlet property="delegate" destination="uXA-86-8DJ" id="e2X-Pp-2pI"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G58-12-btt">
-                                        <rect key="frame" x="11" y="128" width="266" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G58-12-btt">
+                                        <rect key="frame" x="12" y="118" width="548" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="iHH-vA-2RW"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVE-da-1wJ">
-                                        <rect key="frame" x="11" y="223" width="266" height="37"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVE-da-1wJ">
+                                        <rect key="frame" x="11" y="213" width="549" height="37"/>
                                         <color key="backgroundColor" red="0.22352941179999999" green="0.17254901959999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="b7q-cN-v9j"/>
+                                        </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
@@ -214,15 +330,21 @@
                                             <outlet property="delegate" destination="uXA-86-8DJ" id="kjB-cu-NSn"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONFIRM PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-a9-ffY">
-                                        <rect key="frame" x="11" y="198" width="266" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIRM PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-a9-ffY">
+                                        <rect key="frame" x="12" y="187" width="548" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="Xrf-YE-Z4l"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtj-Em-C4L">
-                                        <rect key="frame" x="29" y="280" width="230" height="54"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtj-Em-C4L">
+                                        <rect key="frame" x="29" y="267" width="510" height="54"/>
                                         <color key="backgroundColor" red="0.22352941179999999" green="0.17254901959999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="0L5-Po-Aev"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="18"/>
                                         <state key="normal" title="REGISTER">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -237,9 +359,51 @@
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.37647058820000001" green="0.2901960784" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gEj-Jb-fmI" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="11" id="14P-42-TJA"/>
+                                    <constraint firstItem="oUG-a9-ffY" firstAttribute="top" secondItem="gEj-Jb-fmI" secondAttribute="bottom" constant="7" id="33S-jE-8Jj"/>
+                                    <constraint firstAttribute="trailing" secondItem="x16-5e-aeF" secondAttribute="trailing" constant="8" id="3vL-KS-ebM"/>
+                                    <constraint firstAttribute="centerX" secondItem="LVE-da-1wJ" secondAttribute="centerX" constant="-1.5" id="5Dk-49-AzJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kc6-CD-Yxg" secondAttribute="trailing" constant="8" id="7D9-2c-x8P"/>
+                                    <constraint firstAttribute="trailing" secondItem="LVE-da-1wJ" secondAttribute="trailing" constant="8" id="A8w-iv-cpk"/>
+                                    <constraint firstAttribute="height" constant="359" id="Boa-6x-umK"/>
+                                    <constraint firstAttribute="trailing" secondItem="gEj-Jb-fmI" secondAttribute="trailing" constant="8" id="CLK-ih-C0e"/>
+                                    <constraint firstItem="kc6-CD-Yxg" firstAttribute="top" secondItem="D0f-4o-tuD" secondAttribute="bottom" constant="8" id="D6W-vF-toj"/>
+                                    <constraint firstAttribute="centerX" secondItem="gEj-Jb-fmI" secondAttribute="centerX" constant="-1.5" id="DDF-lA-qTQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="wtj-Em-C4L" secondAttribute="trailing" constant="29" id="GJG-4p-bup"/>
+                                    <constraint firstAttribute="trailing" secondItem="G58-12-btt" secondAttribute="trailing" constant="8" id="IcO-i3-OHA"/>
+                                    <constraint firstAttribute="centerX" secondItem="wtj-Em-C4L" secondAttribute="centerX" id="IuQ-bh-R38"/>
+                                    <constraint firstItem="x16-5e-aeF" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="11" id="J6x-RB-4kI"/>
+                                    <constraint firstItem="oUG-a9-ffY" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="12" id="KSf-RA-7Cc"/>
+                                    <constraint firstItem="G58-12-btt" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="12" id="Mub-TS-XpZ"/>
+                                    <constraint firstItem="wtj-Em-C4L" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="29" id="OyU-fA-KKH"/>
+                                    <constraint firstAttribute="trailing" secondItem="oUG-a9-ffY" secondAttribute="trailing" constant="8" id="Poi-DV-h7M"/>
+                                    <constraint firstItem="D0f-4o-tuD" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="3" id="Tar-bg-s2w"/>
+                                    <constraint firstAttribute="trailing" secondItem="D0f-4o-tuD" secondAttribute="trailing" constant="3" id="WYd-2j-UKO"/>
+                                    <constraint firstAttribute="trailing" secondItem="eTU-n2-Dof" secondAttribute="trailing" constant="8" id="X3G-Gw-zdn"/>
+                                    <constraint firstAttribute="centerX" secondItem="G58-12-btt" secondAttribute="centerX" constant="-2" id="ZjD-jh-bel"/>
+                                    <constraint firstItem="eTU-n2-Dof" firstAttribute="top" secondItem="kc6-CD-Yxg" secondAttribute="bottom" constant="1" id="aoC-R4-V6I"/>
+                                    <constraint firstItem="eTU-n2-Dof" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="11" id="b3F-ly-Vci"/>
+                                    <constraint firstItem="LVE-da-1wJ" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="11" id="cZe-oX-JFV"/>
+                                    <constraint firstAttribute="centerX" secondItem="eTU-n2-Dof" secondAttribute="centerX" constant="-1.5" id="fsc-Kz-Yd7"/>
+                                    <constraint firstItem="wtj-Em-C4L" firstAttribute="top" secondItem="LVE-da-1wJ" secondAttribute="bottom" constant="17" id="gXe-0K-Cnr"/>
+                                    <constraint firstAttribute="centerX" secondItem="oUG-a9-ffY" secondAttribute="centerX" constant="-2" id="hag-7L-yCp"/>
+                                    <constraint firstItem="kc6-CD-Yxg" firstAttribute="leading" secondItem="FJI-Lf-Oo0" secondAttribute="leading" constant="12" id="jiv-vU-qUQ"/>
+                                    <constraint firstItem="G58-12-btt" firstAttribute="top" secondItem="eTU-n2-Dof" secondAttribute="bottom" constant="8" id="juX-9z-sfG"/>
+                                    <constraint firstItem="D0f-4o-tuD" firstAttribute="top" secondItem="x16-5e-aeF" secondAttribute="bottom" constant="7" id="lg0-4f-IkM"/>
+                                    <constraint firstItem="gEj-Jb-fmI" firstAttribute="top" secondItem="G58-12-btt" secondAttribute="bottom" constant="2" id="nm6-0f-upY"/>
+                                    <constraint firstItem="x16-5e-aeF" firstAttribute="top" secondItem="FJI-Lf-Oo0" secondAttribute="top" constant="8" id="tE1-P2-r6p"/>
+                                    <constraint firstItem="LVE-da-1wJ" firstAttribute="top" secondItem="oUG-a9-ffY" secondAttribute="bottom" constant="3" id="yPF-5j-bFF"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FJI-Lf-Oo0" firstAttribute="leading" secondItem="lW9-ld-7VX" secondAttribute="leadingMargin" id="K8n-z2-Nb1"/>
+                            <constraint firstItem="FJI-Lf-Oo0" firstAttribute="trailing" secondItem="lW9-ld-7VX" secondAttribute="trailingMargin" id="ODH-Wb-P0b"/>
+                            <constraint firstAttribute="centerX" secondItem="FJI-Lf-Oo0" secondAttribute="centerX" id="ZqW-Kz-ZYN"/>
+                            <constraint firstItem="FJI-Lf-Oo0" firstAttribute="top" secondItem="Hsy-N8-pkG" secondAttribute="bottom" constant="25" id="uYZ-lX-nQP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="REGISTER" id="cYU-Vf-6uG"/>
                     <connections>
@@ -253,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLW-KD-mlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="377"/>
+            <point key="canvasLocation" x="2073" y="398"/>
         </scene>
         <!--My Wallet-->
         <scene sceneID="XyS-xK-fmi">
@@ -264,29 +428,11 @@
                         <viewControllerLayoutGuide type="bottom" id="NNu-VI-5pM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B3A-Ns-j56">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhF-Cr-Vyp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-PO-C3g">
-                                        <rect key="frame" x="8" y="38" width="304" height="32"/>
-                                        <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="27"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$32.33" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGU-T2-mBW">
-                                        <rect key="frame" x="8" y="70" width="304" height="25"/>
-                                        <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="22"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.37647058820000001" green="0.2901960784" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="D7X-8I-caN">
-                                <rect key="frame" x="0.0" y="171" width="320" height="333"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="D7X-8I-caN">
+                                <rect key="frame" x="0.0" y="171" width="600" height="365"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -302,8 +448,47 @@
                                     <outlet property="delegate" destination="jpk-lH-Q7m" id="jNQ-ih-aFu"/>
                                 </connections>
                             </tableView>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhF-Cr-Vyp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="171"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 OMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-PO-C3g">
+                                        <rect key="frame" x="8" y="38" width="584" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="XNO-Vj-U0s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="27"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGU-T2-mBW">
+                                        <rect key="frame" x="8" y="73" width="584" height="29"/>
+                                        <fontDescription key="fontDescription" name="Overpass-Reg" family="Overpass" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.37647058820000001" green="0.2901960784" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aYV-PO-C3g" secondAttribute="trailing" constant="8" id="Ay0-xE-m9l"/>
+                                    <constraint firstItem="wGU-T2-mBW" firstAttribute="leading" secondItem="mhF-Cr-Vyp" secondAttribute="leading" constant="8" id="NO3-FA-SSl"/>
+                                    <constraint firstItem="wGU-T2-mBW" firstAttribute="top" secondItem="aYV-PO-C3g" secondAttribute="bottom" id="R7b-D5-4Em"/>
+                                    <constraint firstAttribute="height" constant="171" id="Yxm-ya-B9B"/>
+                                    <constraint firstAttribute="trailing" secondItem="wGU-T2-mBW" secondAttribute="trailing" constant="8" id="gA3-Fa-8x0"/>
+                                    <constraint firstItem="aYV-PO-C3g" firstAttribute="leading" secondItem="mhF-Cr-Vyp" secondAttribute="leading" constant="8" id="gJZ-Vz-Bdd"/>
+                                    <constraint firstItem="aYV-PO-C3g" firstAttribute="top" secondItem="mhF-Cr-Vyp" secondAttribute="top" constant="38" id="sC8-UX-Wyp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mhF-Cr-Vyp" firstAttribute="top" secondItem="9kB-Cx-X7x" secondAttribute="bottom" id="3r4-JL-B7o"/>
+                            <constraint firstItem="mhF-Cr-Vyp" firstAttribute="width" secondItem="B3A-Ns-j56" secondAttribute="width" id="DbW-U0-I8r"/>
+                            <constraint firstAttribute="centerX" secondItem="D7X-8I-caN" secondAttribute="centerX" id="Mpr-Ns-O36"/>
+                            <constraint firstAttribute="centerX" secondItem="mhF-Cr-Vyp" secondAttribute="centerX" id="m4E-8Y-d4V"/>
+                            <constraint firstItem="NNu-VI-5pM" firstAttribute="top" secondItem="D7X-8I-caN" secondAttribute="bottom" id="pDE-Zc-zWT"/>
+                            <constraint firstItem="D7X-8I-caN" firstAttribute="width" secondItem="B3A-Ns-j56" secondAttribute="width" id="t5P-bl-oTb"/>
+                            <constraint firstItem="D7X-8I-caN" firstAttribute="top" secondItem="mhF-Cr-Vyp" secondAttribute="bottom" id="wyM-Cf-Qdh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Wallet" id="frc-HB-e1N"/>
                     <connections>
@@ -314,7 +499,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyz-b7-IKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="1092"/>
+            <point key="canvasLocation" x="2073" y="1153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zvY-yE-pXJ">
@@ -337,7 +522,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERD-js-qWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="377"/>
+            <point key="canvasLocation" x="303.75" y="398.23943661971828"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JgS-LU-fKc">
@@ -361,15 +546,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEL-XU-WQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="1092"/>
+            <point key="canvasLocation" x="1301.25" y="1153.5211267605632"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo" width="262" height="262"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
